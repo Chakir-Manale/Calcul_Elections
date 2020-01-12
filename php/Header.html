@@ -6,96 +6,14 @@
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface:400,400i|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="../fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="../fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="../css/aos.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-
     <!-- Theme Style -->
+    <link rel="stylesheet" href="../fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/myStyle.css">
 
     <script src="../js/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="../js/MyScript.js"></script>
-
-    <script>
-
-        function GoBack() {
-            //window.location.href = location+"#calcul-section";
-
-            location.reload();
-            // $('.ListeGroupes').hide();
-            // $("#form_elections")[0].reset();
-            // $('#form_elections').show();
-        }
-
-        function Calculer() {
-
-            var x;
-            var DivResults = $('#results');
-            var NbGroups = $('#grps').val();
-
-            var NbSieges = $('#sieges').val();
-            var NbVotes = $('#votes').val();
-            console.log("nb grps in calculer : " +NbGroups);
-
-            DivResults.empty();
-            DivResults.show();
-            var votespargrp = [], nompargrp = [];
-
-            for (x = 0; x < NbGroups ; x++)
-            {
-                console.log("loop for in calculer : " +NbGroups);
-                var i = x + 1 ;
-                var NomGrp = $('#NomGroupe' + i).val();
-                var VotesParGrp = $('#Groupe_' + i).val();
-                console.log("nom group : "+NomGrp);
-
-                if (NomGrp === "" || VotesParGrp < 0 )
-                {
-                    alert("Vous devez remplir tous les champs !");
-
-                } else {
-                    nompargrp.push(NomGrp);
-                    votespargrp.push(VotesParGrp);
-
-                    $('.ListeGroupes').hide();
-                    //container.load('ListeGroupes.php');
-                    DivResults.load('Etape1.php',{'nom_per_grp':nompargrp ,'vote_per_grp':votespargrp ,
-                                    'Nbgrps': NbGroups,'Nbvotes': NbVotes  , 'Nbsieges': NbSieges  });
-                }
-            }
-        }
-
-    </script>
-
-    <script>
-        // $(document).ready(function(){
-        //     // Set trigger and container variables
-        //     var trigger = $('#nav ul li a'),
-        //         container = $('#content');
-        //
-        //     // Fire on click
-        //     trigger.on('click', function(){
-        //         // Set $this for re-use. Set target from data attribute
-        //         var $this = $(this),
-        //             target = $this.data('target');
-        //
-        //         // Load target page into container
-        //         container.load(target + '.php');
-        //
-        //         // Stop normal link behavior
-        //         return false;
-        //     });
-        // });
-    </script>
 
 
 </head>

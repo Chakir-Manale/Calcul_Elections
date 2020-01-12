@@ -90,11 +90,6 @@
   </div>
 
 
-  <?php
-
-  ?>
-
-
   <footer class="site-footer" role="contentinfo">
       <div class="row">
         <div class="col-12 text-md-center text-left">
