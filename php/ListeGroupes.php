@@ -5,7 +5,7 @@
                echo ' <div class="form-group input-group-prepend">' .
                     ' <label class="input-group-text" for="Groupe_' . $x . '"> Groupe ' . $x . ': </label>' .
                     ' <input type="text" id="NomGroupe'. $x .'" placeholder="Nom du grp..">' .
-                    ' <input type="number"  calss="grpVotes" value="2" name="Groupe_' . $x . '" id="Groupe_' . $x . '" placeholder="Nb de votes..">' .
+                    ' <input type="number"  calss="grpVotes" name="Groupe_' . $x . '" id="Groupe_' . $x . '" placeholder="Nb de votes..">' .
                     ' </div>';
 
             }

@@ -118,19 +118,5 @@
 	};
 	contentWayPoint();
 
-  var slideImage = function() {
-    $(".slide-image").each(function () {
-      var bg = $(this).data("bg");
-      var pos = $(this).data("kenburn-start");
-
-      $(this).css({
-        "background-image": "url(" + bg + ")",
-        "transform-origin": pos
-      });
-    });
-  };
-  slideImage();
-
-  
 
 })(jQuery);

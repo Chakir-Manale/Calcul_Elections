@@ -7,25 +7,6 @@
     <nav class="navbar navbar-expand-lg  bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand " href="index.php">Elections2020</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
-          aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-   
-        <div class="collapse navbar-collapse" id="navbarsExample05">
-          <ul class="navbar-nav pl-md-5 ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Calcul</a>
-            </li>
-          </ul>
-
-          
-        </div>
       </div>
     </nav>
   </header>
@@ -59,17 +40,17 @@
                     <p id="error" style="color: red "></p>
                 <div class="form-group input-group-prepend">
                   <label class="input-group-text" for="grps">Nb de Groupes:</label>
-                  <input type="number" id="grps" value="2"/>
+                  <input type="number" id="grps" />
                 </div>
 
                 <div class="form-group input-group-prepend">
                   <label class="input-group-text" for="votes" > Nb Votes:</label>
-                  <input type="number"  id="votes" name="votes" value="2"/>
+                  <input type="number"  id="votes" name="votes" />
                 </div>
 
                 <div class="form-group input-group-prepend">
                   <label class="input-group-text" for="sieges"> Nb Sieges:</label>
-                  <input type="number" id="sieges" value="2"/>
+                  <input type="number" id="sieges" />
                 </div>
 
                 <div class="form-group input-group-prepend form-btn">
